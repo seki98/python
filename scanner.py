@@ -1,4 +1,4 @@
-import os, os.path, sys
+import os, os.path, sys, re
 import argparse
 
 from stat import *
@@ -8,26 +8,30 @@ def eexit(message):
 
 class Scanner:
 
-    def __init__(self, path):
+    def __init__(self, path, file):
         
         self.dirs = []
         self.files = []
         self.path = path
+        self.file = file
         self.crawl()
         
-    
+    #crawl selected directory
     def crawl(self):
         if(not os.path.exists(self.path)):
             eexit("Directory does not exist")
         os.chdir(self.path)
 
         print("Scanner initialized")
-        print("Current woring directory:\t{0}\n".format(os.getcwd()))
+        print("Current working directory:\t{0}\n".format(os.getcwd()))
         print("Files present in this directory:")
         print("{0:15} {1:10} {2:10}".format("filename","filesize","filetype"))
 
         for i in os.listdir("."):
-            
+            if(self.file != None):
+                if( re.search("^.*" + self.file + ".*$", i)  ):
+                    print("MATCH!!")
+                    print(i)
             if(S_ISDIR(os.stat(i).st_mode)):
                 newDir = Directory(i,os.getcwd())
                 self.dirs.append(newDir)
@@ -57,12 +61,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scan directory tree of the chosen or current directory")
     
     parser.add_argument('-d', action="store", dest="dirToCrawl", help="Path to the target directory(default: current dir)", default=os.getcwd())
-    parser.add_argument('-f', action="store", dest="fileToSearch", help="Write filename or a chain of letters which will find exact or similiar files")
+    parser.add_argument('-f', action="store", dest="fileToSearch", help="Write filename or a chain of letters which will find exact or similiar files", default=None)
     parser.add_argument('-c', action="store", dest="c", type=int)
     args = parser.parse_args()
 
     
-    scanner = Scanner(args.dirToCrawl);
-    scanner.statistics();
+    scanner = Scanner(args.dirToCrawl, args.fileToSearch)
+    scanner.statistics()
     
     
