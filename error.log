@@ -1,0 +1,196 @@
+ERROR:root:changedir denied in C:\$Recycle.Bin/S-1-5-21-135791158-529722738-3865366526-500
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\$Recycle.Bin/S-1-5-21-135791158-529722738-3865366526-500'
+INFO:root:
+
+ERROR:root:changedir denied in C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount\ProgramData\Microsoft\Crypto\DSS/MachineKeys
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\$WINDOWS.~BT\\Sources\\SafeOS\\SafeOS.Mount\\ProgramData\\Microsoft\\Crypto\\DSS/MachineKeys'
+INFO:root:
+
+ERROR:root:listdir denied in C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount\ProgramData\Microsoft
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'Keys'
+INFO:root:
+
+ERROR:root:listdir denied in C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount\ProgramData
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'Diagnosis'
+INFO:root:
+
+ERROR:root:listdir denied in C:\$WINDOWS.~BT\Sources\SafeOS
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'sources'
+INFO:root:
+
+ERROR:root:listdir denied in C:\$WINDOWS.~BT\Sources
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'winre.wim'
+INFO:root:
+
+ERROR:root:listdir denied in C:\$WINDOWS.~BT
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'schema.dat'
+INFO:root:
+
+ERROR:root:listdir denied in C:\
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'support'
+INFO:root:
+
+ERROR:root:changedir denied in C:\/Config.Msi
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\/Config.Msi'
+INFO:root:
+
+ERROR:root:changedir denied in C:\/PerfLogs
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\/PerfLogs'
+INFO:root:
+
+ERROR:root:changedir denied in C:\Program Files/WindowsApps
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\Program Files/WindowsApps'
+INFO:root:
+
+ERROR:root:listdir denied in C:\
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'WindowsPowerShell'
+INFO:root:
+
+ERROR:root:changedir denied in C:\Program Files (x86)\Google/CrashReports
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\Program Files (x86)\\Google/CrashReports'
+INFO:root:
+
+ERROR:root:listdir denied in C:\Program Files (x86)
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'Update'
+INFO:root:
+
+ERROR:root:listdir denied in C:\
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'InstallShield Installation Information'
+INFO:root:
+
+ERROR:root:changedir denied in C:\ProgramData\Microsoft\Crypto\DSS/MachineKeys
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\ProgramData\\Microsoft\\Crypto\\DSS/MachineKeys'
+INFO:root:
+
+ERROR:root:listdir denied in C:\ProgramData\Microsoft
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'Keys'
+INFO:root:
+
+ERROR:root:listdir denied in C:\ProgramData
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'DataMart'
+INFO:root:
+
+ERROR:root:listdir denied in C:\
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'Microsoft OneDrive'
+INFO:root:
+
+ERROR:root:changedir denied in C:\/System Volume Information
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\/System Volume Information'
+INFO:root:
+
+ERROR:root:changedir denied in C:\Users\All Users\Microsoft\Crypto\DSS/MachineKeys
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\All Users\\Microsoft\\Crypto\\DSS/MachineKeys'
+INFO:root:
+
+ERROR:root:listdir denied in C:\Users\All Users\Microsoft
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'Keys'
+INFO:root:
+
+ERROR:root:listdir denied in C:\Users\All Users
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'DataMart'
+INFO:root:
+
+ERROR:root:listdir denied in C:\Users
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'Microsoft OneDrive'
+INFO:root:
+
+ERROR:root:listdir denied in C:\
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'Default'
+INFO:root:
+
+ERROR:root:listdir denied in C:\Windows\appcompat\Programs
+Traceback (most recent call last):
+  File "scanner.py", line 49, in crawl
+    for i in os.listdir("."):
+PermissionError: [WinError 5] Access is denied: '.'
+INFO:root:
+
+ERROR:root:changedir denied in C:\Windows/AppReadiness
+Traceback (most recent call last):
+  File "scanner.py", line 39, in crawl
+    os.chdir(directory)
+PermissionError: [WinError 5] Access is denied: 'C:\\Windows/AppReadiness'
+INFO:root:
+
+ERROR:root:listdir denied in C:\
+Traceback (most recent call last):
+  File "scanner.py", line 55, in crawl
+    if(S_ISDIR(os.stat(i).st_mode)):
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'assembly'
+INFO:root:
+
