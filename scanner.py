@@ -49,6 +49,8 @@ class Scanner:
             for i in os.listdir("."):
                     
                 if(self.matches(self.avoid, i, self.mode)):
+                    #file/directory should be left from the search
+
                     continue    
                                 
                         
