@@ -1,5 +1,5 @@
-## My little python crawler project
-#Scans all subdirectories from a given directory(current directory, or directory from the -d argument)
+# My little python crawler project
+##Scans all subdirectories from a given directory(current directory, or directory from the -d argument)
 
 Program arguments:
 -d Directory that will be crawled
